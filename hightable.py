@@ -1,8 +1,8 @@
-from flask import Flask, g, redirect, render_template, request, session, url_for, flash, redirect
-from flask_login import LoginManager, UserMixin, login_requierd, login_user, logout_user, current_user
-from flask_bcrypt import Bcrypt
-
 import sqlite3
+
+from flask import Flask, g, redirect, render_template, request, session, url_for, flash
+from flask_bcrypt import Bcrypt
+from flask_login import LoginManager, UserMixin, login_required, login_user, logout_user, current_user
 
 
 app = Flask(__name__)
