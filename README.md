@@ -9,57 +9,56 @@ one has graduated. Using a reliable Alumni information management software solut
 platform can allow Alumni members and other graduates to connect. 
 
 
-## Interface notes
+# Interface notes
 
-#### Login:
+### Login:
 Sign up as employer or employee.
-
-#### Home page:
+### Home page:
 A grid for where all catagories of the app are displayed.
 
-### Home Page Design
+## Home Page Design
 
-#### Top :
+### Top :
 Search Bar
-#### Right: 
+### Right: 
 news(20% verticle) takes to news page
-#### Top Left:
+### Top Left:
 Advice (square 30px X 30px) takes to advice page
-#### Bottom Left:
+### Bottom Left:
 Calendar (square 30px X 30px)takes to calendar page
-#### Middle:
+### Middle:
 Jump from one gallery image to another()takes to gallery page
 
-### Voting system:
+## Voting system:
 Ranking the employee based on customer satisfaction.
 
-### Plan and organize meetings:
+## Plan and organize meetings:
 Employer or employee contacts one another, Scheduling meeting with a calender with specific date and time.
 
-### Payment of annual dues: 
+## Payment of annual dues: 
 monthly subscription payment of 500 and 40% will be used to fund events,hold meetings 
 
-### Job placement:
+## Job placement:
 Notice Board where employees name and qualifications are listed in a block(a page on a notice board) for the employer to pick form
 
-### News: 
+## News: 
 The news of the employees getting a job and saying how they have been handeling it, used for the promotion of the customers
 
-### Messages and Mailing list management: 
+## Messages and Mailing list management: 
 Where Employees and Employers message each other and discuss.
 
-### Searchable Online Directory:
+## Searchable Online Directory:
 Search Bar for where you search employees or employers.Or search a certain word and it will search for jobs using that specific word.
 
-### Career Advice Content:
+## Career Advice Content:
 Where Expierenced employees post advice for employees that dont have as much experience so that they can get a certain job.
 
-### Photo Gallery:
+## Photo Gallery:
 Photos of Jobs oppertunities available ,photos of employees photos of how the company looks, business cards,link to company,vision,mission and value of the company.
 
-## Schedule
+# Schedule
 
-### Tuesdays:
+## Tuesdays:
 Frontend and Backend: messages and mailing list management, Research News(Anthony) 
 Frontend and Backend: Job Placement(Jens)
   Updated Read Me
@@ -70,15 +69,16 @@ Frontend and Backend: Meeting Page/Calender(Mark)
 Frontend and Backend: Photo Gallery(Geo)
 Frontend and Backend: Career Advice (Christo)
 
-### Wednesdays:               Frontend and Backend: Meeting Page/Calender(Mark)
+## Wednesdays:               
+Frontend and Backend: Meeting Page/Calender(Mark)
 Frontend and Backend:News(Anthony) 
 Frontend and Backend:Payment(Anthony,Jens)
 
-### Thursday:                 
+## Thursday:                 
 Frontend and Backend:Payment(Anthony,Jens)
 
 
-### Friday:                    
+## Friday:                    
 Frontend and Backend:Payment(Anthony)
 Frontend and Backend: Search Online Directory(Everyone)
 
