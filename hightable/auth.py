@@ -1,4 +1,4 @@
-from flask import Blueprint, render_template, request, flash
+from flask import Blueprint, render_template, request, flash, session
 
 import mysql.connector
 
@@ -6,8 +6,8 @@ auth = Blueprint('auth', __name__)
 
 security = mysql.connector.connect(
     host='aws.connect.psdb.cloud',
-    user='nvyobhtr1gds29cb71ox',
-    password='pscale_pw_kOzcnqONM68bbfjNFvdTyYZQJ02ynHMQaOyVWeF2oF8',
+    user='h9cuwub11kz3kl7naeag',
+    password='pscale_pw_lPBxSR4iIWGiy9hcJxk9tgAN1XptSU0dU5BqoETceNy',
     database='hightable')
 
 
@@ -16,23 +16,26 @@ def login():
   if request.method == 'POST':
     scursor = security.cursor()
 
-    username = request.form.get('userName')
+    username = request.form.get('username')
     password = request.form.get('password')
 
-    scursor.execute("SELECT password FROM security WHERE username = %s",
-                    (username, ))
+    scursor.execute("SELECT * FROM security WHERE username=%s AND password=%s",
+                    (username, password,))
 
-    result = scursor.fetchone()
+    record = scursor.fetchone()
 
-    if result:
-      if (result[0] == password):
-        flash('You have been logged in!')
-        return render_template("login.html", boolean="True")
+    if record:
+      if (record[1] == username):
+        if (record[2] == password):
+          flash('You have been logged in!')
+          session['loggedin'] = True
+          session['username'] = record[1]
+          return render_template("login.html", boolean="True")
+        else:
+          flash('Invalid password')
       else:
-        flash('Invalid username or password')
-        return render_template("login.html", boolean="False")
-
-  return render_template("login.html", boolean="False")
+        flash('Invalid username')
+  return render_template("login.html")
 
 
 @auth.route('/logout')
