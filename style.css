@@ -1,0 +1,19 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*Login Page*/
+body {
+	font-family: Arial, sans-serif;
+	background-color: #A2A2A2;
+}
+.centerText{
+	text-align: center;
+}
+img{
+	padding:10px;
+}
+.img0,.img1,.img2,.img3,.img4,.img5,.img6,.img7,.img8,.img9{
+	position: relative;
+	top: 20px;
+	left:30px;
+}
