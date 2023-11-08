@@ -1,0 +1,61 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+	font-family: Arial, sans-serif;
+	background-color: #A2A2A2;
+}
+
+h1{
+	font-size: 300%;
+	width: 100%;
+	text-align: center;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+.Containerlist{
+	width: 50%;
+	text-align: center;	
+	align-content: center;
+}
+img{
+	padding: 2%;
+}
+
+
+.container {
+	display: flex;
+	width: auto;
+	padding: 0%;
+	margin: auto;
+	border: 1px solid black;
+	border-radius: 5px;
+}
+
+.container input[type=text], .container input[type=password] {
+	width: 150%;
+	padding: 5%;
+	margin-left: 20%;
+	display: inline-block;
+	border: none;
+	background: #f1f1f1;
+	align-content: center;
+	text-align: center;
+}
+
+.container input[type=submit] {
+	font-size: 150%;
+	width: 150%;
+	background-color: #161616;
+	color: white;
+	padding: 1%;
+	margin-left: 20%;
+	border: none;
+	cursor: pointer;
+	border-radius: 2%;
+}
+
+.container input[type=submit]:hover {
+	background-color: #353535;
+}
+
